@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#grossAmount {
+  display: none;
+}
+
+#netAmount {
+  display: flex;
+}
+
+h1 {
+  color: white;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+section:nth-of-type(1) {
+  width: 500px;
+  height: 775px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: white;
+}
+
+form {
+  width: 95%;
+}
+
+#calcMethod,
+#vatPercentage {
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#netAmount,
+#grossAmount {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  height: 150px;
+}
+
+button {
+  justify-content: center;
+  color: white;
+}
+
+#vatValue,
+#totalValue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#result {
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 95%;
+}
+
+button {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border-radius: 10px;
+  border: 0;
+  height: 50px;
+}
