@@ -24,7 +24,7 @@
               checked
               onclick="divToggle()"
             />
-            <label for="netOrGross"
+            <label for="netToGross"
               >Mehrwertsteuer aufschlagen (Netto zu Brutto)</label
             >
           </div>
@@ -50,7 +50,7 @@
               value="19"
               checked
             />
-            <label for="vatPercentage">19%</label>
+            <label for="standardVat">19%</label>
           </div>
           <div>
             <input
@@ -59,7 +59,7 @@
               value="7"
               id="reducedVat"
             />
-            <label for="vatPercentage">7%</label>
+            <label for="reducedVat">7%</label>
           </div>
         </div>
         <div id="netAmount">
@@ -81,7 +81,7 @@
           <p id="vatValueOutput"></p>
         </div>
         <div id="totalValue">
-          <p>Bruttobetrag (Endpreis)</p>
+          <p id="outputText">Bruttobetrag (Endpreis)</p>
           <p id="totalValueOutput"></p>
         </div>
       </div>

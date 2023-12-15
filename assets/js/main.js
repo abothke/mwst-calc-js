@@ -6,9 +6,11 @@ const divToggle = () => {
   if (netAmountDiv.style.display === "none") {
     netAmountDiv.style.display = "flex";
     grossAmountDiv.style.display = "none";
+    outputText.innerHTML = "Bruttobetrag (Endpreis)";
   } else {
     netAmountDiv.style.display = "none";
     grossAmountDiv.style.display = "flex";
+    outputText.innerHTML = "Nettobetrag";
   }
 };
 // Brutto und Nettobetrag ausrechnen und ausgeben in jeweils #netAmount und #grossAmount per innerHTML
@@ -31,10 +33,10 @@ const calcNetAndGross = () => {
   // Wenn #netAmount angezeigt wird, dann Netto zu Brutto und MwSt. ausgeben, sonst Brutto zu Netto und MwSt. ausgeben.
   // die MwSt. wird in beiden Fällen ausgegeben
   if (netAmountStyle === "flex") {
-    outputTotal.innerHTML = netToGrossFormular.toFixed(2);
-    vatValueOutput.innerHTML = netToVatFormular.toFixed(2);
+    outputTotal.innerHTML = netToGrossFormular.toFixed(2) + " €";
+    vatValueOutput.innerHTML = netToVatFormular.toFixed(2) + " €";
   } else {
-    outputTotal.innerHTML = grossToNetformular.toFixed(2);
-    vatValueOutput.innerHTML = grossToVatFormular.toFixed(2);
+    outputTotal.innerHTML = grossToNetformular.toFixed(2) + " €";
+    vatValueOutput.innerHTML = grossToVatFormular.toFixed(2) + " €";
   }
 };
