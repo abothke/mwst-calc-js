@@ -9,7 +9,7 @@ Die Anwendung gibt dann den berechneten Mehrwertsteuerbetrag aus.
 
 ## Demo
 
-https://abothke.github.io/zeichentrenner-js
+https://abothke.github.io/mwst-calc-js
 
 # Hi, I'm Andre! 👋
 
